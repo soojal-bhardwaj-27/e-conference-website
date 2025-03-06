@@ -1,0 +1,130 @@
+.about-page {
+  padding: 6rem 2rem 4rem;
+  background-color: #f8f9fa;
+}
+
+.university-intro {
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #00a8ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #0088cc;
+  transform: translateY(-2px);
+}
+.university-intro h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.university-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+}
+
+.messages-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.message-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.message-card h2 {
+  color: #00a8ff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.profile-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.profile-image {
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 3px solid #00a8ff;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .profile-image {
+    width: 250px;
+    height: 300px;
+  }
+}
+.message-content {
+  flex: 1;
+}
+
+.message-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.profile-info {
+  border-top: 2px solid #eee;
+  padding-top: 1rem;
+}
+
+.profile-info h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.profile-info p {
+  color: #666;
+  margin: 0.25rem 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+  }
+
+  .message-card h2 {
+    font-size: 1.75rem;
+  }
+}

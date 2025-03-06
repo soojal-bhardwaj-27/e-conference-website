@@ -1,0 +1,188 @@
+.home-page {
+  margin: 0;
+  overflow: hidden;
+  background-color: #fff;
+  padding-bottom: 4rem;
+}
+
+.wb-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  margin: 2rem auto;
+  background-color: #f8f9fa;
+}
+
+.wb-logo {
+  max-width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.wb-logo:hover {
+  transform: scale(1.05);
+}
+/* Home Page Sections */
+.home-section {
+  padding: 4rem 2rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 3rem 0;
+  color: #333;
+}
+
+/* Partners & Publication Section */
+.partners-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.publication-info {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.publication-info h3 {
+  color: #00a8ff;
+  margin-bottom: 1.5rem;
+}
+
+.publication-info ul {
+  list-style: none;
+}
+
+.publication-info li {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.publication-info li::before {
+  content: "•";
+  color: #00a8ff;
+  position: absolute;
+  left: 0;
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding: 4rem 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery-item h3 {
+  padding: 1rem;
+  color: #333;
+}
+
+.gallery-item p {
+  padding: 0 1rem 1rem;
+  color: #666;
+}
+
+/* Leadership Section */
+.leadership-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.leadership-intro {
+  text-align: center;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leadership-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.leadership-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+}
+
+.leadership-card h3 {
+  color: #00a8ff;
+  margin-bottom: 1rem;
+}
+
+.leadership-card .quote {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.leadership-card .name {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.leadership-card .position {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .gallery-grid,
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .publication-info {
+    padding: 1.5rem;
+  }
+}

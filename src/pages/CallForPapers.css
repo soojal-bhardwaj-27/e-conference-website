@@ -1,0 +1,105 @@
+.call-papers-page {
+  padding: 6rem 2rem 4rem;
+  background-color: #f8f9fa;
+}
+
+.submission-guidelines {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.submission-guidelines h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.template-download {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.template-download h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #00a8ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0088cc;
+  transform: translateY(-2px);
+}
+
+.guidelines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.guidelines-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.guidelines-section h2 {
+  color: #00a8ff;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.guidelines-section h3 {
+  color: #333;
+  margin: 1.5rem 0 1rem;
+}
+
+.guidelines-section p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.guidelines-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.guidelines-section li {
+  margin: 0.8rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #666;
+}
+
+.guidelines-section li::before {
+  content: "•";
+  color: #00a8ff;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .call-papers-page {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .submission-guidelines h1 {
+    font-size: 2rem;
+  }
+
+  .guidelines-section {
+    padding: 1.5rem;
+  }
+}
