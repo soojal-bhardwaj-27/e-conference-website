@@ -46,50 +46,155 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
-
 .guidelines-section {
   background: white;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
-
 .guidelines-section h2 {
   color: #00a8ff;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
 }
-
 .guidelines-section h3 {
   color: #333;
   margin: 1.5rem 0 1rem;
 }
-
 .guidelines-section p {
   color: #666;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
-
 .guidelines-section ul {
   list-style: none;
   padding: 0;
 }
-
 .guidelines-section li {
   margin: 0.8rem 0;
   padding-left: 1.5rem;
   position: relative;
   color: #666;
 }
-
 .guidelines-section li::before {
   content: "•";
   color: #00a8ff;
   position: absolute;
   left: 0;
 }
+.about-section {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 15px;
+    padding: 2rem !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
 
+.about-section h2 {
+    color: #002147;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+.stats-container {
+    width: 100%;
+    overflow-x: auto;
+    padding: 1rem 0;
+}
+.stats-scroll {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.5rem;
+    min-width: min-content;
+}
+.stat-item {
+    flex: 0 0 auto;
+    width: 220px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+.stat-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+/* Hide scrollbar but keep functionality */
+.stats-container::-webkit-scrollbar {
+    height: 6px;
+}
+.stats-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+.stats-container::-webkit-scrollbar-thumb {
+    background: #00a8ff;
+    border-radius: 3px;
+}
+@media (max-width: 768px) {
+    .stat-item {
+        width: 180px;
+        padding: 1rem;
+    }
+}
+.stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.stat-item {
+    flex: 0 1 200px;
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #00a8ff;
+    margin-bottom: 0.5rem;
+}
+.stat-label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #002147;
+    margin-bottom: 0.5rem;
+}
+.stat-item p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+}
+.guidelines-section {
+  padding: 1.5rem;
+}
+@media (max-width: 768px) {
+    .stats-grid {
+        gap: 1rem;
+    }
+    .stat-item {
+        flex: 0 1 150px;
+    }
+}
 @media (max-width: 768px) {
   .call-papers-page {
     padding: 5rem 1rem 3rem;
@@ -102,4 +207,67 @@
   .guidelines-section {
     padding: 1.5rem;
   }
+}
+.university-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat-card {
+    flex: 1;
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    color: #00a8ff;
+    background: rgba(0, 168, 255, 0.1);
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.stat-info h3 {
+    color: #002147;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00a8ff;
+    margin-bottom: 0.5rem;
+}
+
+.stat-info p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .university-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .stat-card {
+        width: 100%;
+    }
 }
