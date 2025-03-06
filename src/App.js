@@ -19,9 +19,8 @@ function App() {
           <Route path="/about" element={<AboutUniversity />} />
           <Route path="/call-for-papers" element={<CallForPapers />} />
           <Route path="/schedule" element={<Schedule />} />
-          // Make sure the path is "/register"
-          <Route path="/register" element={<Register />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
         <Footer />
       </div>
