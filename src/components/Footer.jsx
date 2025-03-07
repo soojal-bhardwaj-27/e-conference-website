@@ -19,9 +19,11 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="social-links">
-            <a href="https://facebook.com/rafflesuniversity" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://twitter.com/rafflesuniversity" target="_blank" rel="noopener noreferrer">Twitter</a>
-            <a href="https://linkedin.com/company/rafflesuniversity" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.facebook.com/RafflesUni/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://x.com/rafflesuni" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://www.linkedin.com/company/rafflesuniversity-neemrana/posts/?feedView=all" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href ="https://www.instagram.com/raffles_university/?hl=en"target = "_blank" rel ="noopener noreferrer">INSTAGRAM</a>
+            <a href ="https://www.youtube.com/c/rafflesuniversity"target = "_blank" rel ="noopener noreferrer">Youtube</a>
           </div>
         </div>
       </div>
