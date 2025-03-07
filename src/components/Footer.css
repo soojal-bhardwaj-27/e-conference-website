@@ -24,9 +24,19 @@
 
 .social-links {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
+.social-icon {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #00a8ff;
+  transform: translateY(-3px);
+}
 .social-links a {
   color: white;
   text-decoration: none;
