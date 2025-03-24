@@ -1,7 +1,7 @@
 import React from 'react';
 import './CallForPapers.css';
 import abstractTemplate from '../assets/Abstract-Format.docx';
-
+import fullPaperTemplate from '../assets/AETSI paper-template.docx';
 const CallForPapers = () => {
   return (
     <div className="call-papers-page">
@@ -13,6 +13,13 @@ const CallForPapers = () => {
             Download Paper Template
           </a>
         </div>
+        <div className="template-download">
+          <h3>FULL Abstract Format:</h3>
+          <a href={fullPaperTemplate} download className="download-btn">
+            Download FUll Paper Template
+          </a>
+        </div>
+        
         
         <div className="guidelines-grid">
           <div className="guidelines-section">
