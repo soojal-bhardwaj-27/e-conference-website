@@ -14,8 +14,9 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <p>Email: info@e-conference.com</p>
-          <p>Phone: +1 234 567 890</p>
+          <p>Email: aetsi2025@rafflesuniversity.edu.in</p>
+          <p>Phone: +91 9017764480 (Dr. Ajay Kumar)</p>
+          <p>phone: +91 9560149127 (Dr. Jaspreet Hira)</p>
         </div>
         <div className="footer-section">
           <h3>Follow Us</h3>

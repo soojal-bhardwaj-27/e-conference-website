@@ -32,7 +32,7 @@ const Header = () => {
           <div className="conference-meta">
             <div className="date-badge">
               <span className="date-label">Conference Dates</span>
-              <span className="date-value">March 10-11, 2025</span>
+              <span className="date-value">April 24-25, 2025</span>
             </div>
             <Link to="/register" className="register-button">
               Register Now
