@@ -23,7 +23,7 @@ const Contact = () => {
             
             <div className="contact-item">
               <h3>Email</h3>
-              <a href="aetsi2025@rafflesuniversity.edu.in">info@rafflesuniversity.edu.in</a>
+              <a href="email of e-conference">aetsi2025@rafflesuniversity.edu.in</a>
               <p className="subtitle">Email us your query</p>
             </div>
           </div>
