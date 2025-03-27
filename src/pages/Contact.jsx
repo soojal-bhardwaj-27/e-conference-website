@@ -16,13 +16,14 @@ const Contact = () => {
           <div className="contact-block">
             <div className="contact-item">
               <h3>Phone</h3>
-              <p>+91 1494-672300</p>
+              <p>Phone: +91 9017764480 (Dr. Ajay Kumar)</p>
+              <p>phone: +91 9560149127 (Dr. Jaspreet Hira)</p>
               <p className="timing">Monday to Saturday, 9AM to 5PM</p>
             </div>
             
             <div className="contact-item">
               <h3>Email</h3>
-              <a href="mailto:info@rafflesuniversity.edu.in">info@rafflesuniversity.edu.in</a>
+              <a href="aetsi2025@rafflesuniversity.edu.in">info@rafflesuniversity.edu.in</a>
               <p className="subtitle">Email us your query</p>
             </div>
           </div>
